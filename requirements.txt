@@ -13,7 +13,7 @@ EasyProcess
 entrypoint2
 filelock
 future
-gunicorn
+# gunicorn
 idna
 MouseInfo
 mss
