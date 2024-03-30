@@ -104,6 +104,7 @@ DATABASES = {
    }
 }
 
+
  
 # DATABASES = {
 #     'default': {
@@ -115,6 +116,14 @@ DATABASES = {
 #         'PORT': env("DB_PORT"),
 #      }
 # }
+
+DATABASES = {
+    'default': dj_database_url.config(
+        # Replace this value with your local database's connection string.
+        default='postgres://librarymanagement_6m8u_user:ERFn74bZPfoeoY7U9PNjAbXPj9sNLSxO@dpg-co3rjka1hbls73blr7d0-a.oregon-postgres.render.com/librarymanagement_6m8u',
+        
+    )
+}
 
 
 # Password validation
