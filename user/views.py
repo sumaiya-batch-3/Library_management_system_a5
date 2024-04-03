@@ -246,9 +246,6 @@ class SignUpViewClass(SuccessMessageMixin, CreateView):
         user.is_active = False
         user.save()
 
-        # Create UserAccount instance
-        UserAccount.objects.create(user=user)
-    
         # Send email verification
         current_site = get_current_site(self.request)
         subject = 'Activate Your Account'
