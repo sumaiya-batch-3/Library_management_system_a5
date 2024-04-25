@@ -89,7 +89,7 @@ def ViewDetails(request, id):
 
 
 def borrow(request, id, userid):
-    userid-=1
+    # userid-=1
     # print(userid)
     data = Book.objects.get(pk=id)
     account = UserAccount.objects.get(pk=userid)  

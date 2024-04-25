@@ -58,6 +58,7 @@ class DepositMoneyView(TransactionCreateMixin):
         # Update the user's balance
         account.balance += amount
         account.save(update_fields=['balance'])
+        
 
         messages.success(
             self.request,
